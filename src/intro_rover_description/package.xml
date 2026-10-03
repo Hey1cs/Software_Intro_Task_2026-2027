@@ -9,6 +9,19 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+    <!--exec depends are runtime dependencies, 
+  or packages that will be needed to run other packages.
+  probably will require packages related to ros, rvis, gazebo \ -->
+  
+
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>ros2_control</exec_depend>
+  <exec_depend>gz_ros2_control</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 

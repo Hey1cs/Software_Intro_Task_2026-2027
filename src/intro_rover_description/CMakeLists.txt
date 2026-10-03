@@ -23,4 +23,9 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+install() # Tells CMake to install the missing files 
+DIRECTORY config launch meshes rvis urdf # config, ros launch, meshes, rvis and urdf files
+DESTINATION share/${PROJECT_NAME} # tells cmake to put them (intro_rover_description)
+
+
 ament_package()
